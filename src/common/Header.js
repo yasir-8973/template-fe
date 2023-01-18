@@ -33,8 +33,7 @@ function ResponsiveAppBar() {
   
     return (
       <AppBar position="static">
-        <Container maxWidth="xl">
-          <Toolbar disableGutters>            
+          <Toolbar >
             <DifferenceIcon style={{color:theme.palette.custom.dark}}  />
             <Box sx={{ flexGrow: 1, display: { xs: 'flex' } }}>
                 <MenuItem>
@@ -78,7 +77,6 @@ function ResponsiveAppBar() {
               </Menu>
             </Box>
           </Toolbar>
-        </Container>
       </AppBar>
     );
 }
