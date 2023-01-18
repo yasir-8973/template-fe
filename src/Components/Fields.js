@@ -82,19 +82,19 @@ function Project(props) {
                     <Card variant="outlined" sx={{bgcolor :'card.blue', border: `1px solid `+'card.blue',margin:'2%'}}>
                         <CardContent style={{paddingBottom:0}}>
                             <Grid container sx={{ alignItems:'center' }}>
-                                <Grid item xs={6}><h4 style={{ color: theme.palette.custom.light }}>Create Project</h4></Grid>                            
-                                <Grid item xs={4} />
-                                <Grid item xs={1}>
+                                <Grid item xs={6}><h4 style={{ color: theme.palette.custom.light }}>Create Form</h4></Grid>                                                         
+                                {/* <Grid item xs={4} /> */}
+                                {/* <Grid item xs={1}>
                                     <Button sx={{ bgcolor :'card.black', color:'custom.light'
                                     ,':hover': {bgcolor: 'card.black', color: 'custom.light'}, }} fullWidth size='small' variant="contained" onClick={() => { saveTemplate() }}>Save</Button>
                                 </Grid>
                                 <Grid item xs={1}>
                                     <Button sx={{ bgcolor:'card.red',color:'custom.light'
                                     ,':hover': {bgcolor: 'card.red', color: 'custom.light'}, }} fullWidth size='small' variant="contained" onClick={() => { clear() }}>Clear</Button>
-                                </Grid>
+                                </Grid> */}
                             </Grid>
                             <form autocomplete="off" onSubmit={(e) => {e.preventDefault();}} >
-                                <Grid container>                                    
+                                <Grid container>
                                     <Grid item xs='6' sx={{ padding: '10px' }}>
                                         <Autocomplete  
                                             getOptionLabel={option => {
@@ -102,11 +102,11 @@ function Project(props) {
                                             }}
                                             groupBy={(option) => option.templateName}
                                             value={templateName} onChange={(e,val) => setTemplateName(val) } options={templateData}
-                                            renderInput={(params) => <TextField  color="custom"  {...params} focused label="Template" />}
+                                            renderInput={(params) => <TextField  color="custom"  {...params} focused label="Project" />}
                                         />
-                                    </Grid>
-                                    <Grid item xs='3' sx={{ padding: '10px' }}>
-                                        <TextField color='custom' label="Name" focused fullWidth  disabled={!templateName}
+                                    </Grid>   
+                                    {/* <Grid item xs='3' sx={{ padding: '10px' }}>
+                                        <TextField color='custom' label="New Form" focused fullWidth  disabled={!templateName}
                                             value={formName} onChange={(e) => { setFormName(e.target.value) }} placeholder='Form Name'
                                         />
                                     </Grid>
@@ -115,7 +115,7 @@ function Project(props) {
                                             ,':hover': {bgcolor: 'card.black', color: 'custom.light'},
                                         }} disabled={!formName} fullWidth size='small' variant="contained" 
                                         onClick={() => { setAddNewField(true) }}>Add Field</Button>
-                                   </Grid>
+                                   </Grid> */}
                                     <Grid item xs='1' />
                                     <Grid item xs='5' sx={{ padding: '10px' }}>
                                         {/* <div style={{display:'flex',alignItems:'center'}}>

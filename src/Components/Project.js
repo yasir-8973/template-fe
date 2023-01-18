@@ -177,7 +177,7 @@ function Add(props) {
                     <Card variant="outlined" sx={{bgcolor :'card.blue', border: `1px solid `+'card.blue',margin:'2%'}}>
                         <CardContent style={{paddingBottom:0}}>
                             <Grid container sx={{ alignItems:'center' }}>
-                                <Grid item xs={6}><h4 style={{ color: theme.palette.custom.light }}>Create Template</h4></Grid>                            
+                                <Grid item xs={6}><h4 style={{ color: theme.palette.custom.light }}>Create Project</h4></Grid>                            
                                 <Grid item xs={4} />
                                 <Grid item xs={1}>
                                     <Button sx={{ color:'custom.light' }} fullWidth size='small' variant="contained" color="secondary" onClick={() => { saveTemplate() }}>Save</Button>
@@ -194,8 +194,7 @@ function Add(props) {
                                         />
                                     </Grid>
                                     <Grid item xs sx={{ padding: '0 5px' }}>
-                                        <Autocomplete 
-                                            getOptionSelected={(option, value) => (console.log(option,value,'value'))}
+                                        <Autocomplete                                             
                                             value={category} onChange={(e,val) => onCategoryChange(val) } options={['Frontend','Backend']}
                                             renderInput={(params) => <TextField  color="custom"  {...params} focused label="Category" />}
                                         />
@@ -231,7 +230,7 @@ function Add(props) {
                                 <Card variant="outlined" sx={{bgcolor :'card.orange', border: `1px solid `+'card.orangeBorder',width:"100%"}}>
                                     <CardContent style={{paddingBottom:0}}>
                                         <div style={{ display:'grid'}}>
-                                            <p style={{ color: theme.palette.custom.light,margin:'2px' }}><b>Template Name:</b> {e.templateName}</p>
+                                            <p style={{ color: theme.palette.custom.light,margin:'2px' }}><b>Project Name:</b> {e.templateName}</p>
                                             <p style={{ color: theme.palette.custom.light,margin:'2px' }}><b>Category:</b> {e.category}</p>
                                             <p style={{ color: theme.palette.custom.light,margin:'2px' }}><b>Stack:</b> {e.stack}</p>
                                             <p style={{ color: theme.palette.custom.light,margin:'2px' }}><b>Version:</b> {e.version}</p>

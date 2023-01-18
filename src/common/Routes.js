@@ -7,11 +7,11 @@ import {
 } from "react-router-dom";
 import Dashboard from '../Components/Dashboard';
 import Login from './Login';
-import Template from '../Components/Template';
+import Project from '../Components/Project';
 import Header from './Header';
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from './muiStyles';
-import Project from '../Components/Projects';
+import Form from '../Components/Form';
 
 function App() {
   
@@ -34,8 +34,8 @@ function OtherRoutes(){
       <Header />
       <Switch>         
         <Route path="/dashboard"><Dashboard /></Route>
-        <Route path="/templates"><Template /></Route>
-        <Route path="/project"><Project/></Route>
+        <Route path="/project"><Project /></Route>
+        <Route path="/form"><Form /></Route>
         <Redirect from="/" to="/login" />     
       </Switch>
     </Router>

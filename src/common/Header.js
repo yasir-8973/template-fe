@@ -40,10 +40,10 @@ function ResponsiveAppBar() {
                     <Link to="dashboard">Dashboard</Link>
                 </MenuItem>
                 <MenuItem>
-                    <Link to="templates">Template</Link>
+                    <Link to="project">Projects</Link>
                 </MenuItem>
                 <MenuItem>
-                    <Link to="project">Project</Link>
+                    <Link to="form">Forms</Link>
                 </MenuItem>
             </Box>
   
