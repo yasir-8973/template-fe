@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "./build.sh",
+    "build": "webpack",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
